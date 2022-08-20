@@ -11,6 +11,7 @@
   font-weight: bold;
   margin: 8px;
   overflow: hidden;
+  padding-left: 15px;
 }
 
 body {
@@ -135,7 +136,7 @@ a {
 
 .onion {
   cursor: pointer;
-  padding-left: 140px;
+  padding-left: 110px;
 }
 
 .header {
