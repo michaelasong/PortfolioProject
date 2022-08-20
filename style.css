@@ -9,7 +9,7 @@
 }
 
 body {
-  width: fit-content;
+  width: 100%;
   background-color: #e5e5e5;
   padding: 0;
   margin: 0;
@@ -20,7 +20,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 header {
@@ -44,14 +44,14 @@ header {
 
 #cards {
   display: grid;
-  flex-direction: column;
+  grid-template-columns: 1fr 1fr;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  margin: 40px;
 }
 
 .card {
-  display: grid;
+  display: flex;
   flex-direction: column;
   margin: 60px auto;
   background-color: white;
@@ -79,6 +79,7 @@ header {
   margin-bottom: 10px;
   display: flex;
   align-items: center;
+  padding-top: 20px;
 }
 
 .sub-topic {
@@ -164,6 +165,7 @@ nav img {
 
 .aboutMee {
   background-color: white;
+  overflow: hidden;
 }
 
 .Whoiam {
@@ -283,7 +285,7 @@ ul {
 
 .languages li img {
   height: 40px;
-  width: 40px;
+  width: 100px;
   border-radius: 50%;
   vertical-align: middle;
   margin-bottom: 8px;
@@ -474,10 +476,6 @@ nav {
 .popDetails > .lang,
 .popDetails > p {
   width: 100%;
-}
-
-.languages {
-  width: 50%;
 }
 
 /*
