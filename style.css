@@ -6,6 +6,7 @@
 
 .logo {
   color: #344563;
+  font-weight: bold;
 }
 
 body {
@@ -31,15 +32,12 @@ header {
 .backgroundimg {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   background-image: url("/image/background.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-color: white;
   border-radius: 0 0 0 120px;
-  height: 680px;
-  width: 100%;
+  padding: 120px 24px;
 }
 
 .flex {
@@ -64,7 +62,6 @@ header {
 }
 
 nav img {
-  margin-right: 50px;
   display: grid;
   width: 25px;
 }
@@ -82,9 +79,9 @@ nav img {
   color: #172b4d;
 }
 
-.backgroundimg .menuSection {
+/* .backgroundimg .menuSection {
   width: 60%;
-}
+} */
 
 .Whoiam {
   width: 100%;
@@ -117,15 +114,21 @@ a {
   list-style: none;
 }
 
-nav {
+/* nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   background-color: white;
   padding: 10px 30px;
-}
+} */
 
 .onion {
   cursor: pointer;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
