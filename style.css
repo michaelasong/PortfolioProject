@@ -43,7 +43,7 @@ header {
 }
 
 #cards {
-  display: flex;
+  display: grid;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -52,7 +52,7 @@ header {
 
 .card {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  flex-direction: column;
   margin: 60px auto;
   background-color: white;
   border-radius: 16px;
@@ -160,6 +160,10 @@ nav img {
 .myself hr {
   width: 76%;
   color: rgba(221, 221, 221, 0.604);
+}
+
+.aboutMee {
+  background-color: white;
 }
 
 .Whoiam {
