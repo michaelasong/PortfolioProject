@@ -2,15 +2,19 @@
   font-family: "Poppins", sans-serif;
   padding: 0;
   margin: 0;
+  width: 100%;
+  overflow: hidden;
 }
 
 .logo {
   color: #344563;
   font-weight: bold;
+  margin: 8px;
+  overflow: hidden;
 }
 
 body {
-  width: fit-content;
+  width: 100%;
   background-color: #e5e5e5;
   padding: 0;
   margin: 0;
@@ -21,12 +25,13 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  overflow-x: hidden;
+  padding-left: 15px;
 }
 
 header {
   background-color: white;
   width: 100%;
+  padding: 8px;
 }
 
 .backgroundimg {
@@ -64,6 +69,7 @@ header {
 nav img {
   display: grid;
   width: 25px;
+  margin: 10px;
 }
 
 .introduction {
@@ -125,6 +131,7 @@ a {
 
 .onion {
   cursor: pointer;
+  padding-left: 140px;
 }
 
 .header {
