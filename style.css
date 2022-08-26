@@ -300,8 +300,18 @@ ul {
 .contact-me {
   text-align: center;
   color: #fff;
-  width: 200px;
+  width: 240px;
   margin-bottom: 16px;
+}
+
+.contact-me p {
+  padding: 10px;
+}
+
+.cme {
+  font-size: xx-large;
+  font-weight: 1000;
+  margin: 10px;
 }
 
 .input-li input {
@@ -322,7 +332,7 @@ textarea {
 }
 
 .submit-li button {
-  width: 90px;
+  width: 130px;
   height: 30px;
   border-radius: 8px;
   border: 5px solid #6070ff;
@@ -467,6 +477,10 @@ nav {
   width: 100%;
 }
 
+.bigfooter {
+  background-color: white;
+}
+
 .footer {
   background-image: url(./image/contact\ form\ background\ shapes.svg);
   background-size: cover;
@@ -477,6 +491,7 @@ nav {
   background-repeat: no-repeat;
   width: 100%;
   padding: 80px 0 0 0;
+  border-radius: 100px 0 0 0;
 }
 
 /*
