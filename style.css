@@ -9,7 +9,7 @@
 }
 
 body {
-  width: 100%;
+  width: fit-content;
   background-color: #e5e5e5;
   padding: 0;
   margin: 0;
@@ -20,7 +20,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 header {
@@ -35,7 +35,7 @@ header {
   align-items: center;
   background-image: url("/image/background.png");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   background-color: white;
   border-radius: 0 0 0 120px;
   height: 680px;
@@ -43,22 +43,22 @@ header {
 }
 
 #cards {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 35px;
+  width: 100%;
 }
 
 .card {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   margin: 60px auto;
   background-color: white;
   border-radius: 16px;
-  width: 100%;
+  width: 86%;
   height: fit-content;
-  padding: 5px 45px;
+  padding: 24px 30px;
 }
 
 .flex {
@@ -79,7 +79,6 @@ header {
   margin-bottom: 10px;
   display: flex;
   align-items: center;
-  padding-top: 20px;
 }
 
 .sub-topic {
@@ -163,11 +162,6 @@ nav img {
   color: rgba(221, 221, 221, 0.604);
 }
 
-.aboutMee {
-  padding: 30px;
-  background-color: white;
-}
-
 .Whoiam {
   width: 327px;
   padding-top: 10px;
@@ -218,7 +212,6 @@ a:hover {
 
 .button-links {
   margin-bottom: 35px;
-  padding: 10px;
 }
 
 ul {
@@ -227,24 +220,24 @@ ul {
 
 .button-links ul {
   list-style-type: none;
+  display: flex;
   color: #6977ff;
 }
 
 .button-links li {
   align-items: center;
-  padding: 8px;
+  padding: 4px 12px;
   height: 24px;
   background: #ebebff;
   border-radius: 8px;
   margin-right: 5px;
-  float: left;
 }
 
 .project {
   align-items: center;
   padding: 16px;
   color: #396df2;
-  width: 130px;
+  width: 110px;
   border: 1px solid #dfe1e6;
   border-radius: 16px;
   margin-bottom: 10px;
@@ -271,7 +264,7 @@ ul {
 
 .languages li {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: left;
   align-items: left;
   background-color: #f7f7f9;
@@ -280,15 +273,13 @@ ul {
   margin-bottom: 10px;
   height: 70px;
   padding: 5px;
-  font-size: 20px;
-  font-weight: bold;
-  width: 80%;
+  font-size: 12px;
   color: #172b4d;
 }
 
 .languages li img {
   height: 40px;
-  width: 100px;
+  width: 40px;
   border-radius: 50%;
   vertical-align: middle;
   margin-bottom: 8px;
@@ -299,21 +290,23 @@ ul {
   margin-left: 20px;
 }
 
+.footer {
+  background-image: url(./image/footer-bg.png);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  background-repeat: no-repeat;
+  width: 100%;
+  padding: 80px 0 0 0;
+}
+
 .contact-me {
   text-align: center;
   color: #fff;
-  width: 240px;
+  width: 200px;
   margin-bottom: 16px;
-}
-
-.contact-me p {
-  padding: 10px;
-}
-
-.cme {
-  font-size: xx-large;
-  font-weight: 1000;
-  margin: 10px;
 }
 
 .input-li input {
@@ -334,7 +327,7 @@ textarea {
 }
 
 .submit-li button {
-  width: 130px;
+  width: 90px;
   height: 30px;
   border-radius: 8px;
   border: 5px solid #6070ff;
@@ -479,23 +472,187 @@ nav {
   width: 100%;
 }
 
-.bigfooter {
-  background-color: white;
-}
-
-.footer {
-  background-image: url(./image/contact\ form\ background\ shapes.svg);
-  background-size: cover;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #6070ff;
-  background-repeat: no-repeat;
-  width: 100%;
-  padding: 80px 0 0 0;
-  border-radius: 100px 0 0 0;
+.languages {
+  width: 50%;
 }
 
 /*
 header
 */
+
+@media only screen and (min-width: 768px) {
+  .container {
+    padding: 0 0 0 0;
+  }
+
+  body {
+    width: 100%;
+  }
+
+  .menuSection1 {
+    display: inline-block;
+  }
+
+  .onion {
+    display: none;
+    cursor: pointer;
+  }
+
+  .rest {
+    display: flex;
+    justify-content: space-evenly;
+    width: 300px;
+    color: #344563;
+  }
+
+  .introduction {
+    width: 320px;
+  }
+
+  .Whoiam {
+    width: 700px;
+  }
+
+  .card {
+    display: flex;
+  }
+
+  .card img {
+    width: 500px;
+    margin-right: 30px;
+  }
+
+  .myself {
+    display: flex;
+    width: 100%;
+    background-color: white;
+    padding: 190px 40px 10px 40px;
+    margin-bottom: 0;
+    border-radius: 0 180px 0 0;
+  }
+
+  .left {
+    width: 600px;
+    padding-left: 60px;
+  }
+
+  .skills {
+    width: 60%;
+    margin-left: 60px;
+    margin-right: 50px;
+  }
+
+  .myself li ul {
+    display: flex;
+    flex-direction: row;
+    width: 300px;
+    height: 100px;
+  }
+
+  .languages li {
+    width: 300px;
+    height: 70px;
+  }
+
+  .item {
+    font-size: 17px;
+    font-weight: 400;
+  }
+
+  .contact-me {
+    width: 400px;
+  }
+
+  .input-li input {
+    width: 347px;
+  }
+
+  textarea {
+    width: 347px;
+  }
+
+  .submit-li {
+    display: flex;
+    justify-content: center;
+  }
+
+  .popContent {
+    width: 640px;
+    height: fit-content;
+  }
+
+  .popHeading {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .popHeading h3:last-child {
+    cursor: pointer;
+  }
+
+  .popDesc {
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .popImg {
+    height: 290px;
+    width: 90%;
+  }
+
+  .popDetails {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .popDetails > p {
+    width: 62%;
+  }
+
+  .popDetails > .lang {
+    width: 36%;
+  }
+
+  .languages {
+    width: 50%;
+  }
+}
+
+.seeBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: blue;
+  border: 1px solid blue;
+  border-radius: 6px;
+  padding: 5px;
+  margin: 6px;
+  background-color: white;
+  font-size: 10px;
+  transition: all 0.3s ease;
+}
+
+.seeBtn:hover {
+  background-color: blue;
+  color: white;
+  cursor: pointer;
+}
+
+.langTags {
+  display: flex;
+  flex-flow: row wrap;
+  list-style: none;
+}
+
+.popBtns {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+#error {
+  color: red;
+  font-weight: 700;
+}
