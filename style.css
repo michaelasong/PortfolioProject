@@ -47,7 +47,7 @@ header {
   grid-template-columns: 1fr 1fr;
   justify-content: center;
   align-items: center;
-  margin: 40px;
+  margin: 35px;
 }
 
 .card {
@@ -56,9 +56,9 @@ header {
   margin: 60px auto;
   background-color: white;
   border-radius: 16px;
-  width: 86%;
+  width: 100%;
   height: fit-content;
-  padding: 24px 30px;
+  padding: 5px 45px;
 }
 
 .flex {
@@ -164,8 +164,8 @@ nav img {
 }
 
 .aboutMee {
+  padding: 30px;
   background-color: white;
-  overflow: hidden;
 }
 
 .Whoiam {
@@ -218,6 +218,7 @@ a:hover {
 
 .button-links {
   margin-bottom: 35px;
+  padding: 10px;
 }
 
 ul {
@@ -226,24 +227,24 @@ ul {
 
 .button-links ul {
   list-style-type: none;
-  display: flex;
   color: #6977ff;
 }
 
 .button-links li {
   align-items: center;
-  padding: 4px 12px;
+  padding: 8px;
   height: 24px;
   background: #ebebff;
   border-radius: 8px;
   margin-right: 5px;
+  float: left;
 }
 
 .project {
   align-items: center;
   padding: 16px;
   color: #396df2;
-  width: 110px;
+  width: 130px;
   border: 1px solid #dfe1e6;
   border-radius: 16px;
   margin-bottom: 10px;
@@ -270,7 +271,7 @@ ul {
 
 .languages li {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: left;
   align-items: left;
   background-color: #f7f7f9;
@@ -279,7 +280,9 @@ ul {
   margin-bottom: 10px;
   height: 70px;
   padding: 5px;
-  font-size: 12px;
+  font-size: 20px;
+  font-weight: bold;
+  width: 80%;
   color: #172b4d;
 }
 
@@ -296,23 +299,21 @@ ul {
   margin-left: 20px;
 }
 
-.footer {
-  background-image: url(./image/footer-bg.png);
-  background-size: cover;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: white;
-  background-repeat: no-repeat;
-  width: 100%;
-  padding: 80px 0 0 0;
-}
-
 .contact-me {
   text-align: center;
   color: #fff;
-  width: 200px;
+  width: 240px;
   margin-bottom: 16px;
+}
+
+.contact-me p {
+  padding: 10px;
+}
+
+.cme {
+  font-size: xx-large;
+  font-weight: 1000;
+  margin: 10px;
 }
 
 .input-li input {
@@ -333,7 +334,7 @@ textarea {
 }
 
 .submit-li button {
-  width: 90px;
+  width: 130px;
   height: 30px;
   border-radius: 8px;
   border: 5px solid #6070ff;
@@ -476,6 +477,23 @@ nav {
 .popDetails > .lang,
 .popDetails > p {
   width: 100%;
+}
+
+.bigfooter {
+  background-color: white;
+}
+
+.footer {
+  background-image: url(./image/contact\ form\ background\ shapes.svg);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #6070ff;
+  background-repeat: no-repeat;
+  width: 100%;
+  padding: 80px 0 0 0;
+  border-radius: 100px 0 0 0;
 }
 
 /*
