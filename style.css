@@ -56,9 +56,9 @@ header {
   margin: 60px auto;
   background-color: white;
   border-radius: 16px;
-  width: 86%;
+  width: 100%;
   height: fit-content;
-  padding: 24px 30px;
+  padding: 5px 45px;
 }
 
 .flex {
@@ -164,8 +164,8 @@ nav img {
 }
 
 .aboutMee {
+  padding: 30px;
   background-color: white;
-  overflow: hidden;
 }
 
 .Whoiam {
@@ -218,6 +218,7 @@ a:hover {
 
 .button-links {
   margin-bottom: 35px;
+  padding: 10px;
 }
 
 ul {
@@ -226,17 +227,17 @@ ul {
 
 .button-links ul {
   list-style-type: none;
-  display: flex;
   color: #6977ff;
 }
 
 .button-links li {
   align-items: center;
-  padding: 4px 12px;
+  padding: 8px;
   height: 24px;
   background: #ebebff;
   border-radius: 8px;
   margin-right: 5px;
+  float: left;
 }
 
 .project {
@@ -297,15 +298,16 @@ ul {
 }
 
 .footer {
-  background-image: url(./image/footer-bg.png);
+  /* background-image: url(./image/contact\ form\ background\ shapes@2x.svg); */
   background-size: cover;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: white;
+  background-color: red;
   background-repeat: no-repeat;
   width: 100%;
   padding: 80px 0 0 0;
+
 }
 
 .contact-me {
@@ -477,6 +479,60 @@ nav {
 .popDetails > p {
   width: 100%;
 }
+
+.footer {
+  background-image: url(./image/contact\ form\ background\ shapes.svg);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color:#6070FF;
+  background-repeat: no-repeat;
+  width: 100%;
+  padding: 80px 0 0 0;
+}
+
+.contact-me {
+  text-align: center;
+  color: #fff;
+  width: 200px;
+  margin-bottom: 16px;
+}
+
+.input-li input {
+  height: 30px;
+  width: 247px;
+  margin-bottom: 10px;
+  border: 1px solid #cfd8dc;
+  padding-left: 6px;
+}
+
+textarea {
+  height: 150px;
+  width: 247px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #cfd8dc;
+  resize: none;
+}
+
+.submit-li button {
+  width: 90px;
+  height: 30px;
+  border-radius: 8px;
+  border: 5px solid #6070ff;
+  transition-duration: 0.9s;
+  cursor: pointer;
+  background-color: white;
+  color: #6070ff;
+  text-decoration: none;
+}
+
+.submit-li button :hover {
+  color: white;
+  background-color: blue;
+}
+
 
 /*
 header
