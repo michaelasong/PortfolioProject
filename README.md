@@ -10,6 +10,8 @@
 - HTML
 - CSS
 
+## Demo 
+Feel free to visit the site here https://michaelasong.github.io/PortfolioProject/
 
 ## Authors
 
