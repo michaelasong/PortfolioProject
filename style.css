@@ -9,7 +9,7 @@
 }
 
 body {
-  width: 100%;
+  width: fit-content;
   background-color: #e5e5e5;
   padding: 0;
   margin: 0;
@@ -20,7 +20,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 header {
@@ -35,7 +35,7 @@ header {
   align-items: center;
   background-image: url("/image/background.png");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   background-color: white;
   border-radius: 0 0 0 120px;
   height: 680px;
@@ -43,16 +43,16 @@ header {
 }
 
 #cards {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 40px;
+  width: 100%;
 }
 
 .card {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   margin: 60px auto;
   background-color: white;
   border-radius: 16px;
@@ -79,11 +79,18 @@ header {
   margin-bottom: 10px;
   display: flex;
   align-items: center;
-  padding-top: 20px;
 }
 
 .sub-topic {
   margin-bottom: 10px;
+}
+
+.text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #344563;
+  padding-top: 16px;
 }
 
 .sub-topic span {
@@ -163,11 +170,6 @@ nav img {
   color: rgba(221, 221, 221, 0.604);
 }
 
-.aboutMee {
-  background-color: white;
-  overflow: hidden;
-}
-
 .Whoiam {
   width: 327px;
   padding-top: 10px;
@@ -243,7 +245,7 @@ ul {
   align-items: center;
   padding: 16px;
   color: #396df2;
-  width: 110px;
+  width: 140px;
   border: 1px solid #dfe1e6;
   border-radius: 16px;
   margin-bottom: 10px;
@@ -276,16 +278,16 @@ ul {
   background-color: #f7f7f9;
   border-radius: 8px;
   margin-right: 20px;
-  margin-bottom: 10px;
-  height: 70px;
+  margin-bottom: 24px;
+  height: 1000px;
   padding: 5px;
-  font-size: 12px;
+  font-size: 18px;
   color: #172b4d;
 }
 
 .languages li img {
   height: 40px;
-  width: 100px;
+  width: 40px;
   border-radius: 50%;
   vertical-align: middle;
   margin-bottom: 8px;
@@ -478,6 +480,187 @@ nav {
   width: 100%;
 }
 
+.languages {
+  width: 50%;
+}
+
 /*
 header
 */
+
+@media only screen and (min-width: 768px) {
+  .container {
+    padding: 0 0 0 0;
+  }
+
+  body {
+    width: 100%;
+  }
+
+  .menuSection1 {
+    display: inline-block;
+  }
+
+  .onion {
+    display: none;
+    cursor: pointer;
+  }
+
+  .rest {
+    display: flex;
+    justify-content: space-evenly;
+    width: 300px;
+    color: #344563;
+  }
+
+  .introduction {
+    width: 320px;
+  }
+
+  .Whoiam {
+    width: 700px;
+  }
+
+  .card {
+    display: flex;
+  }
+
+  .card img {
+    width: 500px;
+    margin-right: 30px;
+  }
+
+  .myself {
+    display: flex;
+    width: 100%;
+    background-color: white;
+    padding: 190px 40px 90px 40px;
+    margin-bottom: 0;
+    border-radius: 0 180px 0 0;
+  }
+
+  .left {
+    width: 600px;
+    padding-left: 60px;
+  }
+
+  .skills {
+    width: 60%;
+    margin-left: 60px;
+    margin-right: 50px;
+  }
+
+  .myself li ul {
+    display: flex;
+    flex-direction: row;
+    width: 300px;
+    height: 100px;
+  }
+
+  .languages li {
+    width: 900px;
+    height: 90px;
+  }
+
+  .item {
+    font-size: 17px;
+    font-weight: 400;
+  }
+
+  .contact-me {
+    width: 400px;
+  }
+
+  .input-li input {
+    width: 347px;
+  }
+
+  textarea {
+    width: 347px;
+  }
+
+  .submit-li {
+    display: flex;
+    justify-content: center;
+  }
+
+  .popContent {
+    width: 640px;
+    height: fit-content;
+  }
+
+  .popHeading {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .popHeading h3:last-child {
+    cursor: pointer;
+  }
+
+  .popDesc {
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .popImg {
+    height: 290px;
+    width: 90%;
+  }
+
+  .popDetails {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .popDetails > p {
+    width: 62%;
+  }
+
+  .popDetails > .lang {
+    width: 36%;
+  }
+
+  .languages {
+    width: 50%;
+  }
+}
+
+.seeBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: blue;
+  border: 1px solid blue;
+  border-radius: 6px;
+  padding: 5px;
+  margin: 6px;
+  background-color: white;
+  font-size: 10px;
+  transition: all 0.3s ease;
+}
+
+.seeBtn:hover {
+  background-color: blue;
+  color: white;
+  cursor: pointer;
+}
+
+.langTags {
+  display: flex;
+  flex-flow: row wrap;
+  list-style: none;
+}
+
+.popBtns {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+#error {
+  color: red;
+  font-weight: 700;
+}
