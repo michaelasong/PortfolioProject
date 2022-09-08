@@ -1,18 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="style.css" />
-        <title>Portfolio</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Document</title>
+</head>
 
-<body>
+<body onload="onLoad()">
+  <script src="app.js"></script>
   <nav>
     <h3 class="logo">My Logo</h3>
     <div class="rest">
@@ -20,10 +18,31 @@
       <div><a href="#about">About</a></div>
       <div><a href="#contact">Contact</a></div>
     </div>
-    <img class="onion"  src="image/Union.png" alt="" />
+    <img class="onion" onclick="OpenBar()" src="image/Union.png" alt="" />
   </nav>
 
 
+  <div class="small-screen">
+    <ul class="small-menu" id="small-menu">
+
+      <li onclick="CloseBar()">
+        X
+      </li>
+
+      <li onclick="CloseBar()">
+        <a href="#cards">Portfolio</a>
+      </li>
+
+      <li onclick="CloseBar()">
+        <a href="#about">About</a>
+      </li>
+
+      <li onclick="CloseBar()">
+        <a href="#contact">Contact</a>
+      </li>
+
+    </ul>
+  </div>
 
 
   <div class="container">
@@ -87,7 +106,7 @@
                 <li>javascript</li>
               </ul>
             </div>
-            <div class="project" >See Project</div>
+            <div class="project" onclick="showPopUp (0)">See Project</div>
           </div>
         </div>
 
@@ -118,7 +137,7 @@
                 <li>javascript</li>
               </ul>
             </div>
-            <div class="project" >See Project</div>
+            <div class="project" onclick="showPopUp (1)">See Project</div>
           </div>
           <img class="img" src="image/card-2.svg" alt="" />
         </div>
@@ -147,7 +166,7 @@
                 <li>javascript</li>
               </ul>
             </div>
-            <div class="project" >See Project</div>
+            <div class="project" onclick="showPopUp (2)">See Project</div>
           </div>
         </div>
 
@@ -178,7 +197,7 @@
                 <li>javascript</li>
               </ul>
             </div>
-            <div class="project" >See Project</div>
+            <div class="project" onclick="showPopUp (3)">See Project</div>
           </div>
           <img class="img" src="image/card-4.svg" alt="" />
         </div>
@@ -189,12 +208,10 @@
       <div class="left">
         <div class="description">
           <h2 class="topic">About <br /> Myself</h2>
-          <p class="text">
           Hello I'm a software developer! I can help you build a product ,
           feature or website Look through some of my work and experience! If
           you like what you see and have a project you need coded, don't
           hestiate to contact me.
-        </p>
         </div>
         <div class="menuSection">
           <a href="#" target="_blank">LET'S CONNECT</a>
@@ -261,17 +278,17 @@
           action="https://formspree.io/f/xqknrzed" method="post">
 
           <div class="input-li">
-            <input type="text" name="text" id="text-input" placeholder="Yeremias" maxlength="30"
+            <input type="text" name="text" oninput="updateForm()" id="text-input" placeholder="Yeremias" maxlength="30"
               required>
           </div>
 
           <div class="input-li">
-            <input type="email" name="email" id="mail" placeholder="natajay14@gmail.com"
+            <input type="email" name="email" oninput="updateForm()" id="mail" placeholder="natajay14@gmail.com"
               required>
           </div>
 
           <div class="text-area-li">
-            <textarea name="msg" id="msg" maxlength="500" placeholder="Write your messages here"
+            <textarea name="msg" id="msg" maxlength="500" oninput="updateForm()" placeholder="Write your messages here"
               required></textarea>
           </div>
           <div class="submit-li">
