@@ -137,4 +137,3 @@ function closePopUp() {
   const pop = document.getElementById('popUps');
   pop.style.display = 'none';
 }
-
