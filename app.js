@@ -109,11 +109,16 @@ function showPopUp(a) {
   const popBtns = document.createElement('div');
   popBtns.className = 'popBtns';
   const items4 = ['See Live', 'See Source'];
+  const images = ['/image/Icon11.png', '/image/Vector11.svg'];
 
   for (let i = 0; i < items4.length; i += 1) {
     const li = document.createElement('button');
     li.className = 'seeBtn';
     li.innerText = items4[i];
+    const img = document.createElement('img');
+    img.setAttribute('src', images[i]);
+    img.setAttribute('alt', 'icon');
+    li.appendChild(img);
     popBtns.appendChild(li);
   }
 

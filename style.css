@@ -114,7 +114,7 @@ header {
 }
 
 nav img {
-  margin-right: 10px;
+  margin-right: 50px;
   display: grid;
   width: 25px;
 }
@@ -211,7 +211,7 @@ a:hover {
 }
 
 .button-links {
-  margin-bottom: 35px;
+  margin-bottom: 5px;
 }
 
 ul {
@@ -241,6 +241,11 @@ ul {
   border: 1px solid #dfe1e6;
   border-radius: 16px;
   margin-bottom: 10px;
+  text-align: center;
+}
+
+.project:hover{
+  cursor: pointer;
 }
 
 .project2 {
@@ -439,10 +444,13 @@ nav {
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
+  color: #172b4d;
+  padding-left: 7px;
 }
 
 .popHeading h3:last-child {
   cursor: pointer;
+  color: #172b4d;
 }
 
 .popDesc {
@@ -451,10 +459,11 @@ nav {
   justify-content: left;
   align-items: center;
   width: 100%;
+  color: #172b4d;
 }
 
 .popImg {
-  height: 290px;
+  height: 400px;
   width: 100%;
 }
 
@@ -464,12 +473,23 @@ nav {
   justify-content: flex-start;
   margin: 20px auto;
   width: 100%;
+  height: 180px;
   text-align: justify;
 }
 
 .popDetails > .lang,
 .popDetails > p {
   width: 100%;
+  margin: 10px;
+}
+
+.popBtns{
+  margin-top: 1em;
+}
+
+.seeBtn{
+  width: 90px;
+  height: 35px;
 }
 
 .languages {
@@ -641,6 +661,10 @@ header
   cursor: pointer;
 }
 
+.seeBtn img{
+  margin-left: 0.5em;
+  width: 1em;
+}
 .langTags {
   display: flex;
   flex-flow: row wrap;
