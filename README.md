@@ -10,10 +10,8 @@
 - HTML
 - CSS
 
-## Live Demo (if available)
-
-[Live Demo Link](https://livedemo.com)
-
+## Demo 
+Feel free to visit the site here https://michaelasong.github.io/PortfolioProject/
 
 ## Getting Started
 
@@ -36,7 +34,6 @@ To get a local copy up and running follow these simple example steps.
 ### Deployment
 
 
-
 ## Authors
 
 👤 **Michael Asong**
@@ -56,11 +53,6 @@ Feel free to check the [issues page](../../issues/).
 
 Give a ⭐️ if you like this project!
 
-## Acknowledgments
-
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
 
 ## 📝 License
 
