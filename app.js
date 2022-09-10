@@ -142,3 +142,45 @@ function closePopUp() {
   const pop = document.getElementById('popUps');
   pop.style.display = 'none';
 }
+
+// --------------- form validation section ----------------
+
+// eslint-disable-next-line consistent-return
+function validateForm() {
+  const form = document.forms.form1.mail.value;
+  const err = document.getElementsByClassName('error');
+
+  if (form !== form.toLowerCase()) {
+    document.getElementById('error').innerHTML += "Email can't contain capital letters";
+    return false;
+  }
+}
+
+// eslint-disable-next-line prefer-const
+let formObj = { name: '', email: '', content: '' };
+
+function updateForm() {
+  document.getElementById('text-input').addEventListener('input', (e) => {
+    formObj.name = e.target.value;
+  });
+
+  document.getElementById('mail').addEventListener('input', (e) => {
+    formObj.email = e.target.value;
+  });
+
+  document.getElementById('msg').addEventListener('input', (e) => {
+    formObj.content = e.target.value;
+  });
+
+  localStorage.setItem('formObj', JSON.stringify(formObj));
+}
+
+function onLoad() {
+  // Retrieve the object from storage
+  const retrievedObject = JSON.parse(localStorage.getItem('formObj'));
+  if (retrievedObject.name) {
+    document.getElementById('text-input').value = retrievedObject.name;
+    document.getElementById('mail').value = retrievedObject.email;
+    document.getElementById('msg').value = retrievedObject.content;
+  }
+}
