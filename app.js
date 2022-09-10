@@ -151,7 +151,7 @@ function validateForm() {
   const err = document.getElementsByClassName('error');
 
   if (form !== form.toLowerCase()) {
-    document.getElementById('error').innerHTML += "Email can't contain capital letters";
+    document.getElementById('error').innerHTML = "Email can't contain capital letters";
     return false;
   }
 }
